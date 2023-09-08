@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+    <head>Rock Papper Scissors</head>
+    <body>
+        <button onclick="
+            let number = Math.random();
+            let chosed ='';
+            let result = '';
+            if(number>0 && number<1/3){
+                result = 'Rock'
+                chosed = `It's a tie.`;
+            }else if(number>=1/3 && number<2/3){
+                result = 'Papper'
+                chosed='You lose';
+            }else if(number>1/3 && number<=1){
+                result ='Scissors'
+                chosed = 'You win';
+            }
+            console.log(chosed);
+            alert('You chosed Rock. Computer chosed '+result+'. '+ chosed);
+            ">Rock</button>
+        <button onclick="
+        let ran = Math.random();
+        let select ='';
+        let output = '';
+        if(ran>0&&ran<1/3){
+            select = 'Rock';
+            output = 'You win.'
+        }else if(ran>=1/3&& ran<2/3){
+            select = 'Papper';
+            output =`It's a tie`;
+        }else if(ran>=2/3 && ran <1){
+            select ='Scissors';
+            output ='You lose.'
+        }alert('You chosed Scissors. Computer Chosed '+ select +'.'+output);
+        ">Papper</button>
+        <button onclick="
+        picComputerMove();
+        ">Scissors</button>
+
+    </body>
+    <script>
+        let elect ='';
+        let utput = '';
+        function picComputerMove(){
+            let an = Math.random();
+        
+        if(an>0&&an<1/3){
+            elect = 'Rock';
+            utput = 'You win.'
+        }else if(an>=1/3&& an<2/3){
+            elect = 'Papper';
+            utput =`It's a tie`;
+        }else if(an>=2/3 && an <1){
+            elect ='Scissors';
+            utput ='You lose.'
+        }
+        alert('You chosed Scissors. Computer Chosed '+ elect +'.'+utput);
+        
+        
+        }
+    </script>
+</html>
